@@ -1,10 +1,10 @@
-import { Button, ButtonTheme } from "@/shared/ui/Button/Button.tsx";
+import { classNames } from "@/shared/lib/classNames/classNames.ts";
 
 function App() {
 	return (
-		<>
-			<Button theme={ButtonTheme.ACCENT}>Я кнопка</Button>
-		</>
+		<div className={classNames("app", {}, [])}>
+			<div className="content-page">Hello world</div>
+		</div>
 	);
 }
 
